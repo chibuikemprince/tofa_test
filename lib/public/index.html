@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1  align="center"> Welcome to Super Electronic Store </h1>
+  <h5 id="resdiv" align="center" style="background-color:aliceblue;">  </h5>
+
+    <div  id="container" class="container" style="width:700px;margin:auto;background-color:aliceblue;">
+       
+
+<div id="regformdiv" style="margin-left: 20px;">
+    <h4  align="center"> Registration Form </h4>
+<form action="" id="regform" onsubmit="submitform(this,event,'resdiv','post','user','register')">
+<input type="text" name="name" id="" placeholder="name">
+<input type="email" name="email" id="" placeholder="Enter Email">
+<input type="password" name="password" id="" placeholder="Enter Password">
+<input type="text" name="address" id="" placeholder="Enter Address">
+<input type="submit" value="Register now">
+</form>
+
+</div>
+ 
+<div id="loginformdiv" style="margin-left: 180px;">
+<h4  align="center"> Login</h4>
+<!-- (formid,event,resDiv,method,url) -->
+
+    <form action="" id="loginform" onsubmit="submitform(this,event,'resdiv','get','user','login')">
+     <input type="email" name="email" id="" placeholder="Enter Email">
+    <input type="password" name="password" id="" placeholder="password">
+    <input type="submit" value="Login now">    
+</form>
+    
+    </div>
+    
+
+
+
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

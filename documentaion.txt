@@ -1,0 +1,7 @@
+--config.js
+contains the two environmental variable, production and resting environment.
+if the NODE_ENV =production , then the production environment object is exported 
+else the testing environment object will be exported.
+
+
+// the public folder contains the web fron end, visit index.htm to get started
