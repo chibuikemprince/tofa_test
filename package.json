@@ -1,6 +1,10 @@
 {
   "name": "tofa_test",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.22.6",
+    "npm":"6.14.15"
+  }, 
   "description": "Test Project",
   "main": "index.js",
   "directories": {
@@ -15,7 +19,7 @@
     "url": "git+https://github.com/chibuikemprince/tofa_test.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chibuikem Prince Chisomaga",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chibuikemprince/tofa_test/issues"
