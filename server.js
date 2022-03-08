@@ -62,8 +62,8 @@ requestedPath = "public";
 }
  
 
-    const ServerHandler =  typeof(routes[requestedPath]) !="undefined" ?routes[requestedPath]:routes.index
- 
+    const ServerHandler =  typeof(routes[requestedPath]) !="undefined" ?routes[requestedPath]:routes.index;
+// console.log("SERVERH: ",ServerHandler)
  
 
 

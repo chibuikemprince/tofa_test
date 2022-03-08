@@ -25,7 +25,7 @@ const server = http.createServer((req,res)=>{
  
 serverHandler.init(req,res,(status,resData)=>{
  
-    console.log(resData);
+    // console.log(resData);
     
     if(typeof(resData)=="object"){
     
@@ -38,7 +38,7 @@ serverHandler.init(req,res,(status,resData)=>{
      
      }
      
-    resData.header["Access-Control-Allow-Origin"] = "http://localhost:2000";
+    resData.header["Access-Control-Allow-Origin"] = "*";
     resData.header["Access-Control-Allow-Headers"] = "X-Requested-With,Content-Type";
     resData.header["Access-Control-Allow-Credentials"] = true;
     resData.header["Access-Control-Allow-Methods"] =  "GET POST PUT PATCH DELETE OPTIONS";
@@ -61,7 +61,7 @@ serverHandler.init(req,res,(status,resData)=>{
   
 })
 
-
+ 
 
 server.listen(config.port,config.hostname,()=>{
 
@@ -69,6 +69,8 @@ server.listen(config.port,config.hostname,()=>{
 
 
 })
+
+
 
  
     

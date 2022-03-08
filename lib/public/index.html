@@ -1,51 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <!-- Title  -->
+    <title>Photo Warehouse</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
 
-  <h1  align="center"> Welcome to Super Electronic Store </h1>
-  <h5 id="resdiv" align="center" style="background-color:aliceblue;">  </h5>
+<body> 
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
 
-    <div  id="container" class="container" style="width:700px;margin:auto;background-color:aliceblue;">
-       
+ <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
 
-<div id="regformdiv" style="margin-left: 20px;">
-    <h4  align="center"> Registration Form </h4>
-<form action="" id="regform" onsubmit="submitform(this,event,'resdiv','post','user','register')">
-<input type="text" name="name" id="" placeholder="name">
-<input type="email" name="email" id="" placeholder="Enter Email">
-<input type="password" name="password" id="" placeholder="Enter Password">
-<input type="text" name="address" id="" placeholder="Enter Address">
-<input type="submit" value="Register now">
-</form>
 
-</div>
- 
-<div id="loginformdiv" style="margin-left: 180px;">
-<h4  align="center"> Login</h4>
-<!-- (formid,event,resDiv,method,url) -->
+         <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            
+            <!-- Button Group -->
+			 
+			<p id="nav_msg"></p>
+            <div class="amado-btn-group mt-30 mb-100">
+                <a href="#" class="btn amado-btn mb-15" id="startbutton">Start </a>
+                 
+                <!-- <a href="#" class="btn amado-btn active">New this week</a> -->
 
-    <form action="" id="loginform" onsubmit="submitform(this,event,'resdiv','get','user','login')">
-     <input type="email" name="email" id="" placeholder="Enter Email">
-    <input type="password" name="password" id="" placeholder="password">
-    <input type="submit" value="Login now">    
-</form>
-    
+                  <select id="order">
+                  <option value="id">Id</option>
+           <option value="title" >Title</option>
+           
+           <option value="albumId">albumId</option>
+           </select>
+
+                  <select id="dir">
+           <option value="asc" >Asc </option>
+           <option value="dsc">Desc</option>
+            </select>
+
+
+
+           <br/>
+               
+            </div>
+ <a href="#" class="btn amado-btn mb-15" id="filter">Filter </a>
+           
+           
+			  <a href="#" class="btn badge badge-primary" id="previous"> Previous </a>
+                  <a href="#" class="btn badge badge-primary" id="next"> Next </a>
+              
+        </header>
+        <!-- Header Area End -->
+
+        <!-- Product Catagories Area Start -->
+        <div class="products-catagories-area clearfix">
+            <div class="amado-pro-catagory clearfix" id="main">
+
+                
+               
+
+		   </div>
+        </div>
+        <!-- Product Catagories Area End -->
     </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
     
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="js/rest.js"></script>
 
-
-
-    </div>
-
-
-<script src="app.js"></script>
 </body>
+
 </html>
