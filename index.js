@@ -61,7 +61,7 @@ serverHandler.init(req,res,(status,resData)=>{
   
 })
 
- 
+ config.port = process.env.PORT  || config.port
 
 server.listen(config.port,config.hostname,()=>{
 
@@ -75,3 +75,4 @@ server.listen(config.port,config.hostname,()=>{
  
     
     //https://desolate-meadow-12588.herokuapp.com
+    //https://floating-thicket-82353.herokuapp.com/

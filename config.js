@@ -5,7 +5,7 @@ var configuration = {
 
 configuration.production ={
 "hostname":"127.0.0.1",
-"port":"4000",
+"port":"2000",
 "hashSalt":"testing"
 
 }
