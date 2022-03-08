@@ -64,15 +64,24 @@ requestedPath = "public";
 
     const ServerHandler =  typeof(routes[requestedPath]) !="undefined" ?routes[requestedPath]:routes.index;
 // console.log("SERVERH: ",ServerHandler)
- 
-
-
+ if(ServerHandler){
+   
 ServerHandler(req,res,(status,data)=>{
 
     callback(status,data)
 
 
 })
+  
+ }
+ else{
+     callback(500,{
+
+          "data":  {"msg":"invalid request"},
+  "header":{"Content-Type":"application/json"}
+     }) 
+ }
+
 
 
 

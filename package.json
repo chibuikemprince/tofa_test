@@ -1,0 +1,24 @@
+{
+  "name": "tofa_test",
+  "version": "1.0.0",
+  "description": "Test Project",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibuikemprince/tofa_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chibuikemprince/tofa_test/issues"
+  },
+  "homepage": "https://github.com/chibuikemprince/tofa_test#readme"
+}
